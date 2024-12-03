@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hover Effect</title>
+  <style>
+    .image-container5 img {
+      width: 300px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container5 img:hover {
+      transform: scale(1.1); /* Zoom in */
+    }
+  </style>
+  <style>
+    .image-container2 img {
+      width: 300px;
+      height: auto;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container2 img:hover {
+      transform: rotate(10deg); /* Rotate slightly */
+    }
+  </style>
+  <style>
+    .image-container3 img {
+      width: 300px;
+      height: auto;
+      filter: grayscale(100%); /* Start in grayscale */
+      transition: filter 0.3s ease;
+    }
+
+    .image-container3 img:hover {
+      filter: grayscale(0); /* Full color on hover */
+    }
+  </style>
+  <style>
+    .image-container4 img {
+      width: 300px;
+      height: auto;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .image-container4 img:hover {
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+      transform: scale(1.05); /* Slight zoom */
+    }
+  </style>
+  <style>
+    .image-container {
+      position: relative;
+      width: 300px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-container .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="image-container5">
+    <h3>1</h3><img src="about us card.jpg" alt="Sample Image">
+  </div>
+  <div class="image-container2">
+    <h3>2</h3><img src="about us card.jpg" alt="Sample Image">
+  </div>
+  <div class="image-container3">
+    <h3>3</h3><img src="about us card.jpg" alt="Sample Image">
+  </div>
+  <div class="image-container4">
+    <h3>4</h3><img src="about us card.jpg" alt="Sample Image">  
+  </div>
+  <div class="image-container">
+    <h3>5</h3><img src="about us card.jpg" alt="Sample Image">
+    <div class="overlay">Hovered!</div>
+  </div>
+
+</body>
+</html>
